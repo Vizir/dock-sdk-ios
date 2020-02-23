@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "M2YCDT"
+  s.name         = "DOCKSDK"
   s.version      = "1.1.0"
   s.summary      = "DOCK SDK for iOS Apps"
 
