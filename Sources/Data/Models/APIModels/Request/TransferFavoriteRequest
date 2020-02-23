@@ -1,0 +1,10 @@
+class TransferFavoriteRequest: M2YModel {
+    var digit: String?
+    var name: String?
+    var agency: String?
+    var account: String?
+    var bankCode: String?
+    var cpf: String?
+    var nickname: String?
+    var accountType: String?
+}
