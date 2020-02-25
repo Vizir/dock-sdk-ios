@@ -56,7 +56,8 @@ extension CDTRateService: TargetType {
                 "X-VizirBankAppBuildNumber": BUILD_NUMBER,
                 "X-VizirBankAppVersion": VERSION_NUMBER,
                 "X-VizirBankAppName": APP_NAME,
-                "X-VizirBankAppPlatform": "ios"]
+                "X-VizirBankAppPlatform": "ios",
+                "X-VizirBankCorrelationId": UUID().uuidString]
 
     }
 }
