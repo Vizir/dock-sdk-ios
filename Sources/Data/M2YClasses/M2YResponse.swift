@@ -96,7 +96,7 @@ extension String {
         "C9997":"Não autorizado",
         "C9998":"Sessão expirada"]
         var msg = ""
-        if (dic[self] != null) {
+        if (dic[self] != NULL) {
             msg = "\(dic[self]) (self)"
         } else {
             msg = "Erro de comunicação (\(self ?? def))"
