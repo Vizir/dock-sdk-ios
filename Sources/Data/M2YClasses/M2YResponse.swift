@@ -97,7 +97,7 @@ extension String {
         "C9998":"Sessão expirada"]
         var msg = ""
         if (dic[self] != nil) {
-            msg = "\(dic[self]) (self)"
+            msg = "\(dic[self] ?? def) \(self)"
         } else {
             msg = "Erro de comunicação (\(self ?? def))"
         }
