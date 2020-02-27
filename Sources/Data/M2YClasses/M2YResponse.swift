@@ -95,8 +95,13 @@ extension String {
         "C0063":"Erro ao processar a requisição, verifique as informações e tente novamente",
         "C9997":"Não autorizado",
         "C9998":"Sessão expirada"]
-        
-        return dic[self] ?? def
+        var msg = ""
+        if (dic[self] != null) {
+            msg = "\(dic[self]) (self)"
+        } else {
+            msg = "Erro de comunicação (\(self ?? def))"
+        }
+        return msg
     }
 }
 
