@@ -52,6 +52,7 @@ let GET_TERMS_AND_POLITICS = "account/getTermsAndPolitics"
 let GET_ALL_CARDS = "account/getCards"
 let ACCOUNT_GET_MONTHS = "account/getAvailableMonths"
 let LOGOUT = "account/logout"
+let ALIAS_BANK = "account/aliasbank"
 let RESET_PASSWORD = "login/resetPassword"
 
 // Cards

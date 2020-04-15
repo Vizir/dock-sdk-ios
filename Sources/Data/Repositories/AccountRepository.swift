@@ -117,4 +117,13 @@ open class AccountRepository: M2YRepository {
             error(message)
         })
     }
+
+    open static func getAliasBank(success:@escaping(GetAliasBankResponse)->(), error:@escaping(String)->()) -> Disposable{
+        return remoteDataSouce.getAliasBank().singleSubscribe(onSuccess: { (response: GetAliasBankResponse) in
+            success(response)
+        }, onError: { (message) in
+            error(message)
+        })
+    }
+
 }
