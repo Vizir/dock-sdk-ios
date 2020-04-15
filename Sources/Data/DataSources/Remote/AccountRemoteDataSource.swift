@@ -67,6 +67,6 @@ open class AccountRemoteDataSource {
     }
 
     func getAliasBank() -> Single<Response> {
-        return provider.rx.request(.aliasbank)
+        return provider.rx.request(.getAliasBank)
     }
 }
