@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class GetAliasbankResponse: M2YModel {
+open class GetAliasBankResponse: M2YModel {
     open var bankAccountType: String?
     open var bankAccountNumber: String?
     open var bankBranchNumber: String?
