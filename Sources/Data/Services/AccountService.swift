@@ -23,6 +23,7 @@ enum AccountService {
     case registerToken(request: RegisterTokenRequest)
     case getCards(request: IdRequest)
     case logout
+    case getAliasBank
 }
 
 extension AccountService: TargetType {
@@ -59,6 +60,8 @@ extension AccountService: TargetType {
             return GET_ALL_CARDS
         case .logout:
             return LOGOUT
+        case .getAliasBank:
+            return ALIAS_BANK
         }
     }
 
@@ -72,7 +75,7 @@ extension AccountService: TargetType {
 
     var task: Task {
         switch self {
-        case .getAbout, .getAccountIds, .getTermsAndPolitics:
+        case .getAbout, .getAccountIds, .getTermsAndPolitics, .getAliasBank:
             return .requestPlain
         case .sendCode(let request):
             return .requestParameters(parameters: request.toEncryptedBody(), encoding: JSONEncoding.default)
